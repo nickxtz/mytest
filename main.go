@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net/http"
 	"time"
-	"user/conf"
 
 	"github.com/gorilla/mux"
 )

@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"klook.libs/logger"
+	"log"
 	"net/http"
 	"time"
 
@@ -27,7 +27,7 @@ func main() {
 
 	err := server.ListenAndServe()
 	if err != nil {
-		logger.Fatalf("server: start faile : %v\n", err)
+		log.Fatalf("server: start faile : %v\n", err)
 	}
 }
 

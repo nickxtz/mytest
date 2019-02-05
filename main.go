@@ -11,7 +11,9 @@ import (
 )
 
 func main() {
-	fmt.Println("serser start...")
+	fmt.Println("server start...")
+	defer fmt.Println("server end")
+
 	r := mux.NewRouter()
 	r.HandleFunc("/pong", Pong).Methods(http.MethodGet)
 	http.Handle("/", r)
